@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img style="height:1.8em;" src="../../assets/images/LogoLatest.JPG">
+      </a>
+      <ul class="nav navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="home">
+            <i class="fa fa-home maxFontSize">Home</i>
+          </a>
+        </li>
+        <!-- <li class="nav-item" routerLinkActive="event" *ngIf="auth.authenticated">
+          <a class="nav-link" routerLink="event">Events</a>
+        </li> -->
+        <li class="nav-item dropdown" *ngIf="auth.authenticated">
+          <a class="nav-link dropdown-toggle maxFontSize" href="#" id="navbarDropDown" data-toggle="dropdown">Services </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item dropdown-toggle text-dark maxFontSize" href="#" data-toggle="dropdown">Form Submissions <span class="caret caret-right"></span> </a>
+            <div class="dropdown-menu dropdown-menu-left">
+              
+              <!-- <a class="dropdown-item dropdown-toggle text-dark dropdown-menu-left maxFontSize">Revenue <span class="caret caret-right"></span></a>  
+              <a class="dropdown-item dropdown-toggle text-dark dropdown-menu-left maxFontSize">Birth and Death <span class="caret caret-right"></span></a> 
+              <a class="dropdown-item dropdown-toggle text-dark dropdown-menu-left maxFontSize">Ration Card <span class="caret caret-right"></span></a> 
+              <a class="dropdown-item dropdown-toggle text-dark dropdown-menu-left maxFontSize">Bio Data and Resume <span class="caret caret-right"></span></a> 
+              <a class="dropdown-item dropdown-toggle text-dark dropdown-menu-left maxFontSize">Aadhaar <span class="caret caret-right"></span></a>  -->
+  
+              <a class="dropdown-item text-dark maxFontSize" routerLink="birthcertificate">Birth Certificate</a> 
+              <a class="dropdown-item text-dark maxFontSize" routerLink="birthcorrection"> Birth Corrections - CDMA </a>
+              <a class="dropdown-item text-dark maxFontSize" routerLink="deathcertificate">Death Certificate - CDMA</a>
+              <a class="dropdown-item text-dark maxFontSize" routerLink="deathcorrection"> Death Corrections Application Form </a>
+              <!-- <a class="dropdown-item text-dark maxFontSize" routerLink="familymemcert">Family Member Certificate Form</a> -->
+               <a class="dropdown-item text-dark maxFontSize" routerLink="childnameinclusioninbirthcert">Child Name Inclusion Form (After 1 year)</a>  
+              <a class="dropdown-item text-dark maxFontSize" routerLink="rationcardadditionbirth">Ration Card Member Addition(Birth) Application Form </a> 
+              <a class="dropdown-item text-dark maxFontSize" routerLink="rationcardmodification">Ration card Modifications Applciation Form </a>
+              <a class="dropdown-item text-dark maxFontSize" routerLink="backwardclassesmuslims">Integrated BC-E Application Form </a>  
+              <a class="dropdown-item text-dark maxFontSize" routerLink="aadhaardataupdated">Aadhaar Data Update Form </a>
+            </div>
+  
+            <!-- <div class="dropdown-menu dropdown-menu-left" routerLinkActive="birthcertificate">
+                  <a class="dropdown-item text-dark maxFontSize">Revenue</a>
+                   <a class="dropdown-item text-dark maxFontSize" routerLink="birthcertificate">Family Member Certificate Form</a>
+              </div> -->
+  
+            <a class="dropdown-item disabled maxFontSize" href="#">Traffic Challan Payment</a>
+            <a class="dropdown-item disabled maxFontSize" href="#">Ticket Booking</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item" routerLinkActive="active" *ngIf="!auth.authenticated">
+          <button class="btn" style="font-size:12pt;color:white;background-color:green;border:2px solid #336600;padding:3px">
+            <a class="nav-link" routerLink="auth">Login | Register</a>
+          </button>
+        </li>
+        <li class="nav-item" *ngIf="auth.authenticated">
+          <a class="nav-link" routerLink="home" (click)="auth.logout()" style="font-size:12pt;color:white;background-color:green;border:2px solid #336600;padding:3px">
+            <span class="fa fa-power-off"></span> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  

@@ -1,0 +1,17 @@
+<div id="content" #content>
+
+
+<p align="center">
+  <button type="button" onClick="print()"  class="printForm">Print Form</button>
+  <!-- <button type="button" (click)="downloadPDF()" class="exportFormtoPDF">Export to PDF</button>  -->
+</p>
+
+  
+
+ <formio [form]="service.form" [submission]="service.resource" [refresh]="service.refresh" [hideComponents]="config.parents" [readOnly]="true"></formio> 
+
+ <footer class="site-footer">
+   <p align="right"> Printed from <strong> www.happyonline.co.in</strong> </p> 
+  </footer>
+
+</div>

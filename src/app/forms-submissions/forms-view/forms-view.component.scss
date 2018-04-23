@@ -1,0 +1,92 @@
+dl dt{
+    display: inline;
+    font-size:12pt;
+}
+
+dl dd{
+    display: inline;
+    font-size:12pt;
+}
+
+dt {
+    font-weight: 700;
+    padding-right: 200px;
+}
+
+.form-control:disabled, .form-control[readonly]{
+    opacity: 1;
+    background-color: #fff;
+}
+.printForm{
+    background-color: white;
+}
+.form-control.flatpickr-input.input{
+    width: 120px;
+}
+.ho-min-font{
+    font-size: 12px;
+}
+.ho-panel-wid{
+    width: 1050px;
+}
+
+.formio-component-textarea .form-control{
+    font-size: 12px;
+}
+
+.fa.fa-calendar{
+    display: none;
+}
+@media print {
+
+    @page { 
+        margin: 0; 
+        @bottom-left {
+            content: "Footer content goes here.";
+        }
+    }
+    .site-footer{
+        nav-right: auto;
+        // content: "How are u";
+        display: inline;
+    }
+    #footer {
+        display: block; 
+        position: fixed; 
+        bottom: 20;
+    }
+       
+    .nav.nav-tabs{
+        display: none;
+    }
+    .printForm{
+        display: none;
+     }
+     .formio-component-submit{
+         display: none;
+     }
+     .formio-component-columnsText .form-control {
+         border-bottom: black;
+         border-top: red;
+         border-left: yellow;
+         border-right: green;
+     } 
+     .formio-component-columns2Text .form-control {
+        border-bottom: black;
+        border-top: red;
+        border-left: yellow;
+        border-right: green;
+    }
+//     div[class*='formio-component-tableTextArea']{
+//         div[class^='form-control']{
+
+//         border: red;
+//     }
+// }
+    // .formio-component-tableTextArea  .form-control {
+    //     border: red;
+
+    // }
+   
+   
+}

@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootswatch/dist/cosmo/_variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootswatch/dist/cosmo/_bootswatch.scss";
+
+
+// *{
+//     background-image: url("image3.jpg");
+    
+// }
+
+.form-group.has-feedback.formio-component.formio-component-radio .input-group{
+    display: inline;
+}
+
+.maxFontSize{
+    font-size:12pt;
+    font-weight: bold;
+ }
+
+
+
+
+
+
